@@ -1,0 +1,146 @@
+body{
+    min-height: 100vh;
+    color:gray;
+    padding-left: 1200px;
+    font-family: 'roboto',sans-serif;
+    margin:0;
+    min-width: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(30, 30, 46);
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    min-height: 100vh;
+}
+
+.text:hover,.icon:hover{
+    cursor:pointer;
+    color:white;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+.top .icon{
+    flex:2;
+}
+.top .appimage{
+    flex:4;
+}
+.top .icon .menu{
+    width: 100px;
+    height: 30px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    height: 540px;
+}
+input{
+    height: 35px;
+    width: 240px;
+    background: transparent;
+    border:1px solid gray;
+    border-radius: 5px;
+    color:white;
+    margin-left: 10px;
+}
+input::placeholder{
+    font-size: 18px;
+    padding:10px;
+}
+.search_icon,.home_icon,.store_icon,.categories_icon,
+.downloads_icon,.channels_icon,.mystuff_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'poppins',sans-serif;
+}
+.search_icon:hover,.home_icon:hover,
+.store_icon:hover,.categories_icon:hover,
+.downloads_icon:hover,.channels_icon:hover,
+.mystuff_icon:hover{
+    color:white;
+    cursor: pointer;
+}
+.categories_icon .icon1{
+    flex:0.75;
+}
+.categories_icon .text{
+    flex:4.3;
+}
+.categories_icon .icon2{
+    flex:0.7;
+}
+
+.icon{
+    flex:0.6
+}
+.text{
+    flex:4;
+    justify-content:start;
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid black;
+    padding:10px;
+    font-family: 'poppins',sans-serif;
+}
+.bottom .image{
+    flex:1;
+}
+.bottom .text{
+    flex:3;
+    line-height: 15px;
+}
+.bottom.icon{
+    flex:1;
+}
+.profile{
+    width:50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.right{
+    display: grid;
+    grid-template-rows: auto;
+    background-color: rgb(12, 12, 32);
+    padding:40px;
+    
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.movieimage{
+    height: 150px;
+    width:287px;
+    border-radius: 7px;
+    margin:10px;
+}
